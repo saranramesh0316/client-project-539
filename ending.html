@@ -47,11 +47,14 @@
 
 <section>
     <h2>Featured Resources and Handouts</h2>
-    <ul>
-        <li><strong>Exiting a Community-Engaged Project Worksheet:</strong> Guided template for responsible project transition, asset delivery, and offboarding.</li>
-        <li><a href="https://docs.google.com/document/d/1TrEDolwmOIlXgYgAP9VvlOGoYOwFfe6KxzZOgZSVYVw/edit?usp=drive_link">Project Scoping Handout and Terms (Final Review)</a>: Re-evaluate final deliverables against original project commitments.</li>
-        <li><strong>Ginsberg Center Student-Client Partnership Toolkit (Closing Section):</strong> Best practices for respectful closure with community organizations.</li>
-    </ul>
+    <details>
+        <summary>Show resources</summary>
+        <ul>
+            <li><strong>Exiting a Community-Engaged Project Worksheet:</strong> Guided template for responsible project transition, asset delivery, and offboarding.</li>
+            <li><a href="https://docs.google.com/document/d/1TrEDolwmOIlXgYgAP9VvlOGoYOwFfe6KxzZOgZSVYVw/edit?usp=drive_link">Project Scoping Handout and Terms (Final Review)</a>: Re-evaluate final deliverables against original project commitments.</li>
+            <li><strong>Ginsberg Center Student-Client Partnership Toolkit (Closing Section):</strong> Best practices for respectful closure with community organizations.</li>
+        </ul>
+    </details>
 </section>
 
     </main>
@@ -60,7 +63,10 @@
       <address>
         <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
       </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+      <p>&copy; <span id="year"></span> Regents of the University of Michigan</p>
     </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
